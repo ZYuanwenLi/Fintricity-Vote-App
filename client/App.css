@@ -1,0 +1,74 @@
+/**
+* CSS file is modified from the css file from github
+*/
+body{
+    overflow-x: hidden;
+}
+.pic-block{
+  background-color: #fff;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border-radius: 100%;
+  border:8px solid whitesmoke;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0 1px 1px;
+  background-position: center center;
+  background-size: cover;
+}
+.spinnerLoger{
+  margin-top: 80px;
+  padding-bottom: 20px;
+}
+div[data-name="mojs-shape"]{
+  z-index: -1
+}
+.pic-block .hover{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  opacity: 0;
+  transition: all 0.2s;
+}
+.vote-btn{
+  position: absolute;
+  width: 104%;
+  height: 104%;
+  left:-1%;
+  top: -1%;
+  
+  background: transparent;
+  cursor: pointer;
+}
+.vote-btn .fa-user-check{
+  color:#fff;
+  font-size: 3em;
+  opacity: 0.5;
+}
+
+.hover.true.voted .vote-btn .fa-user-check{
+  opacity:1;
+  display: inline-block;
+}
+.candidates-list{
+  min-height: 290px;
+}
+.hover.true .vote-btn .fa-user-check{
+  display: none;
+}
+.pic-block .hover.voted,.pic-block .hover.true,.hover.loading{
+  opacity: 1;
+}
+.break{
+  word-break: break-word;
+}
+.pic-block:hover .hover{
+  opacity: 1;
+}
+.tx{
+  min-height: 30px !important;
+  word-break: break-word;
+}
